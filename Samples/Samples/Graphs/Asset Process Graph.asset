@@ -17,31 +17,21 @@ MonoBehaviour:
   - id: 0
   - id: 1
   - id: 2
-  - id: 3
-  - id: 4
   edges:
-  - GUID: 71a690ea-214f-4163-b4ca-f2ff7a3cd831
+  - GUID: fdbc962c-f40a-4c8f-b8cb-8e43b9e16cf8
     owner: {fileID: 11400000}
-    inputNodeGUID: 1454f8fd-b83a-4177-86d2-1fe4064f1c7a
-    outputNodeGUID: d23a2e8c-70be-475d-bccc-f28eec02fc0a
-    inputFieldName: importers
-    outputFieldName: outputImporters
-    inputPortIdentifier: 
-    outputPortIdentifier: 
-  - GUID: 21863e3a-2432-4801-a9d8-a087f47b5dd3
-    owner: {fileID: 11400000}
-    inputNodeGUID: d23a2e8c-70be-475d-bccc-f28eec02fc0a
+    inputNodeGUID: 824bdd24-61b0-4831-ac89-5ba4be7a2b9d
     outputNodeGUID: 61b625cd-add1-4278-9335-6247698277c7
     inputFieldName: importers
     outputFieldName: importers
     inputPortIdentifier: 
     outputPortIdentifier: 
-  - GUID: ccc4c4b8-4e14-45e5-8e54-89e9970e3685
+  - GUID: ffed0de5-34d8-4713-b6ec-b26b8970760b
     owner: {fileID: 11400000}
-    inputNodeGUID: 1ddaff01-894c-446b-ac20-02e5126494b9
-    outputNodeGUID: 8fd7d6c1-9707-43ab-892e-f70daa7d75da
-    inputFieldName: assets
-    outputFieldName: assets
+    inputNodeGUID: 1454f8fd-b83a-4177-86d2-1fe4064f1c7a
+    outputNodeGUID: 824bdd24-61b0-4831-ac89-5ba4be7a2b9d
+    inputFieldName: importers
+    outputFieldName: outputImporters
     inputPortIdentifier: 
     outputPortIdentifier: 
   groups: []
@@ -49,8 +39,8 @@ MonoBehaviour:
   pinnedElements:
   - position:
       serializedVersion: 2
-      x: 0
-      y: 0
+      x: 48
+      y: 96
       width: 150
       height: 200
     opened: 1
@@ -61,52 +51,16 @@ MonoBehaviour:
   serializedParameterList: []
   stickyNotes: []
   nodeInspectorReference: {fileID: 0}
-  position: {x: 89, y: 11, z: 0}
-  scale: {x: 0.8695652, y: 0.8695652, z: 1}
+  position: {x: 599, y: -141, z: 0}
+  scale: {x: 1.3225, y: 1.3225, z: 1}
   references:
     version: 1
     00000000:
-      type: {class: LoadNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
-      data:
-        nodeCustomName: 
-        GUID: 8fd7d6c1-9707-43ab-892e-f70daa7d75da
-        computeOrder: 0
-        position:
-          serializedVersion: 2
-          x: 79.80002
-          y: 326.1501
-          width: 168
-          height: 95
-        expanded: 1
-        debug: 0
-        nodeLock: 0
-        Folders:
-        - {fileID: 102900000, guid: fc774bba5272e7343aa6a1b20102098d, type: 3}
-        assetType: Prefab
-    00000001:
-      type: {class: ProcessReplaceShaderNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
-      data:
-        nodeCustomName: 
-        GUID: 1ddaff01-894c-446b-ac20-02e5126494b9
-        computeOrder: 1
-        position:
-          serializedVersion: 2
-          x: 394.4501
-          y: 326
-          width: 145
-          height: 95
-        expanded: 0
-        debug: 0
-        nodeLock: 0
-        replaceData:
-        - From: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
-          To: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-    00000002:
       type: {class: SaveAndRefreshNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
       data:
         nodeCustomName: 
         GUID: 1454f8fd-b83a-4177-86d2-1fe4064f1c7a
-        computeOrder: 4
+        computeOrder: 2
         position:
           serializedVersion: 2
           x: 780.10205
@@ -116,37 +70,39 @@ MonoBehaviour:
         expanded: 0
         debug: 0
         nodeLock: 0
-    00000003:
+    00000001:
       type: {class: LoadImportersNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
       data:
         nodeCustomName: 
         GUID: 61b625cd-add1-4278-9335-6247698277c7
-        computeOrder: 2
+        computeOrder: 0
         position:
           serializedVersion: 2
-          x: 38.000027
-          y: 526.0001
-          width: 242
-          height: 136
+          x: -127.25002
+          y: 574.50006
+          width: 184
+          height: 95
         expanded: 0
         debug: 0
         nodeLock: 0
         Folders:
         - {fileID: 102900000, guid: 629ede42958494f42b5f2d67df7d68a2, type: 3}
         assetType: Model
-    00000004:
-      type: {class: ProcessImporterSetImportMaterialNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
+    00000002:
+      type: {class: ProcessApplyPresetNode, ns: mitaywalle.AssetProcessGraph.Nodes,
+        asm: mitay-walle.asset-process-graph}
       data:
-        nodeCustomName: 
-        GUID: d23a2e8c-70be-475d-bccc-f28eec02fc0a
-        computeOrder: 3
+        nodeCustomName: Apply Preset | Set Material Mode
+        GUID: 824bdd24-61b0-4831-ac89-5ba4be7a2b9d
+        computeOrder: 1
         position:
           serializedVersion: 2
-          x: 377.7001
-          y: 526.0001
+          x: 224.31755
+          y: 526
           width: 270
-          height: 96
+          height: 119
         expanded: 0
         debug: 0
         nodeLock: 0
-        Mode: 1
+        Preset: {fileID: 2655988077585873504, guid: 2094cf3e8e9a3a748867ec4fbe2cddab,
+          type: 2}

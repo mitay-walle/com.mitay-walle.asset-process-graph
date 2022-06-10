@@ -44,5 +44,4 @@ namespace mitaywalle.AssetProcessGraph.Editor
 			rootView.Add(graphView);
 		}
 	}
-
 }
