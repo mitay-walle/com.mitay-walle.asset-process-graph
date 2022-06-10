@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac98089d4290c014ca0c1a8a1f000774, type: 3}
+  m_Name: Asset Process Graph
+  m_EditorClassIdentifier: 
+  serializedNodes: []
+  nodes:
+  - id: 0
+  - id: 1
+  - id: 2
+  edges:
+  - GUID: 3be40d07-dd10-45e7-9cc7-585e7efcf8b8
+    owner: {fileID: 11400000}
+    inputNodeGUID: 1ddaff01-894c-446b-ac20-02e5126494b9
+    outputNodeGUID: 8fd7d6c1-9707-43ab-892e-f70daa7d75da
+    inputFieldName: assets
+    outputFieldName: assets
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 6785e727-ec46-4c05-bd36-486ac2ba5b8f
+    owner: {fileID: 11400000}
+    inputNodeGUID: 1454f8fd-b83a-4177-86d2-1fe4064f1c7a
+    outputNodeGUID: 1ddaff01-894c-446b-ac20-02e5126494b9
+    inputFieldName: assets
+    outputFieldName: outputAssets
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  groups: []
+  stackNodes: []
+  pinnedElements:
+  - position:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 150
+      height: 200
+    opened: 1
+    editorType:
+      serializedType: GraphProcessor.ProcessorView, com.alelievr.NodeGraphProcessor.Editor,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  exposedParameters: []
+  serializedParameterList: []
+  stickyNotes: []
+  nodeInspectorReference: {fileID: 0}
+  position: {x: -277, y: 230, z: 0}
+  scale: {x: 1, y: 1, z: 1}
+  references:
+    version: 1
+    00000000:
+      type: {class: LoadNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
+      data:
+        nodeCustomName: 
+        GUID: 8fd7d6c1-9707-43ab-892e-f70daa7d75da
+        computeOrder: 0
+        position:
+          serializedVersion: 2
+          x: 168
+          y: 235
+          width: 245
+          height: 136
+        expanded: 1
+        debug: 0
+        nodeLock: 0
+        Folders:
+        - {fileID: 102900000, guid: fc774bba5272e7343aa6a1b20102098d, type: 3}
+        assetType: Prefab
+    00000001:
+      type: {class: ProcessReplaceShaderNode, ns: mitaywalle.AssetProcessGraph.Nodes,
+        asm: mitay-walle.asset-process-graph}
+      data:
+        nodeCustomName: 
+        GUID: 1ddaff01-894c-446b-ac20-02e5126494b9
+        computeOrder: 1
+        position:
+          serializedVersion: 2
+          x: 544
+          y: 235
+          width: 340
+          height: 176
+        expanded: 1
+        debug: 0
+        nodeLock: 0
+        replaceData:
+        - From: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+          To: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
+    00000002:
+      type: {class: SaveAndRefreshNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
+      data:
+        nodeCustomName: 
+        GUID: 1454f8fd-b83a-4177-86d2-1fe4064f1c7a
+        computeOrder: 2
+        position:
+          serializedVersion: 2
+          x: 984
+          y: 235
+          width: 167
+          height: 75
+        expanded: 0
+        debug: 0
+        nodeLock: 0

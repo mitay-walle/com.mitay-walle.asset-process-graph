@@ -1,0 +1,28 @@
+{
+  "name": "com.mitay-walle.assset-process-graph",
+  "version": "0.0.1",
+  "displayName": "Asset Process Graph",
+  "description": "",
+  "unity": "2020.2",
+  "documentationUrl": "",
+  "licensesUrl": "",
+  "dependencies": {
+		"com.alelievr.node-graph-processor": "https://github.com/alelievr/NodeGraphProcessor.git#upm"
+	  },
+ "keywords": [
+    "Workflow",
+	"Assets"
+  ],
+  "author": {
+    "name": "mitay-walle",
+    "email": "mitay-walle91@mail.ru",
+    "url": "https://github.com/mitay-walle"
+  },
+  "samples": [
+    {
+      "displayName": "Usage Examples",
+      "description": "Contains Graphs with different setup",
+      "path": "Samples/Samples"
+    }
+  ]
+}
