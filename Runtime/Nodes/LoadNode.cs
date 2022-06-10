@@ -18,8 +18,12 @@ namespace mitaywalle.AssetProcessGraph.Nodes
 
 		protected override void Process()
 		{
+			#if UNITY_EDITOR
 			assets = AssetDatabase.FindAssets($"t:{assetType}", Folders.Select(AssetDatabase.GetAssetPath).ToArray())
-				.Select(AssetDatabase.GUIDToAssetPath).Select(AssetDatabase.LoadAssetAtPath<Object>).ToArray();
+				.Select(AssetDatabase.GUIDToAssetPath).Select(AssetDatabase.LoadAssetAtPath<Object>).ToArray(); 
+  #endif
+  
+    
 		}
 	}
 	

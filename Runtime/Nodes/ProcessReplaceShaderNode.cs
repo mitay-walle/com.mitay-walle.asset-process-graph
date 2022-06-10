@@ -44,7 +44,11 @@ namespace mitaywalle.AssetProcessGraph.Nodes
 				if (data != null)
 				{
 					material.shader = data.To;
+					#if UNITY_EDITOR
 					Debug.Log($"replace shader at '{AssetDatabase.GetAssetPath(asset)}' | material '{material.name}'");
+  #endif
+
+
 				}
 			}
 		}
