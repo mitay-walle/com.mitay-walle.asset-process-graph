@@ -15,7 +15,7 @@ namespace mitaywalle.AssetProcessGraph.Nodes
 	}
 
 	[Serializable, NodeMenuItem("Process/Replace Shader", typeof(AssetProcessGraph))]
-	public class ProcessReplaceShaderNode : ProcessNode
+	public class ProcessReplaceShaderNode : ProcessAssetNode
 	{
 		public override string name => "Replace Shader";
 

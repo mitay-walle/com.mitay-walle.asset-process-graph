@@ -6,15 +6,15 @@ using UnityEngine;
 using Object = UnityEngine.Object;
 namespace mitaywalle.AssetProcessGraph.Nodes
 {
-	[Serializable, NodeMenuItem("Load/Load From Folders", typeof(AssetProcessGraph))]
+	[Serializable, NodeMenuItem("Load/Assets From Folders", typeof(AssetProcessGraph))]
 	public class LoadNode : AssetProcessGraphNode
 	{
-		public override string name=>"Load From Folders";
+		public override string name=>"Assets From Folders";
 		[SerializeField] DefaultAsset[] Folders;
 		[Input("Asset Type"), SerializeField] string assetType;
 		[Output("Assets")] Object[] assets;
 
-		public override bool canProcess => Folders.Length > 0 && !string.IsNullOrEmpty(assetType);
+		public override bool canProcess => Folders != null && Folders.Length > 0 && !string.IsNullOrEmpty(assetType);
 
 		protected override void Process()
 		{
@@ -26,5 +26,4 @@ namespace mitaywalle.AssetProcessGraph.Nodes
     
 		}
 	}
-	
 }
