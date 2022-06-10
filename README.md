@@ -1,5 +1,6 @@
 # Unity3d Asset Process Graph
 ![](https://github.com/mitay-walle/Unity3d-AssetProcessGraph/blob/main/Documentation/graph_preview.jpg)
+Designer-oriented replacement for Unity3d-official Asset Graph (abondoned at 2020), help batch process assets. UPM package, Easy extendable
 
 # Install
  as dependency you need install NodeGraphProcessor as UPM:
