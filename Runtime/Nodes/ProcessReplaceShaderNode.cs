@@ -14,20 +14,6 @@ namespace mitaywalle.AssetProcessGraph.Nodes
 		public Shader To;
 	}
 
-	[Serializable, NodeMenuItem("Process/Save Assets", typeof(AssetProcessGraph))]
-	public class SaveAndRefreshNode : ProcessNode
-	{
-		public override string name => "Save and Refresh";
-		
-		protected override void Process()
-		{
-			base.Process();
-			AssetDatabase.SaveAssets();
-			AssetDatabase.Refresh();
-		}
-		protected override void ProcessAsset(Object asset) { }
-	}
-	
 	[Serializable, NodeMenuItem("Process/Replace Shader", typeof(AssetProcessGraph))]
 	public class ProcessReplaceShaderNode : ProcessNode
 	{
