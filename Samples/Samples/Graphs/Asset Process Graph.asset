@@ -89,8 +89,7 @@ MonoBehaviour:
         - {fileID: 102900000, guid: 629ede42958494f42b5f2d67df7d68a2, type: 3}
         assetType: Model
     00000002:
-      type: {class: ProcessApplyPresetNode, ns: mitaywalle.AssetProcessGraph.Nodes,
-        asm: mitay-walle.asset-process-graph}
+      type: {class: ProcessApplyPresetNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
       data:
         nodeCustomName: Apply Preset | Set Material Mode
         GUID: 824bdd24-61b0-4831-ac89-5ba4be7a2b9d
@@ -104,5 +103,4 @@ MonoBehaviour:
         expanded: 0
         debug: 0
         nodeLock: 0
-        Preset: {fileID: 2655988077585873504, guid: 2094cf3e8e9a3a748867ec4fbe2cddab,
-          type: 2}
+        Preset: {fileID: 2655988077585873504, guid: 2094cf3e8e9a3a748867ec4fbe2cddab, type: 2}
