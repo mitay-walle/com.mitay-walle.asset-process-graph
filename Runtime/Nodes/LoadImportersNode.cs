@@ -9,21 +9,18 @@ namespace mitaywalle.AssetProcessGraph.Nodes
     [Serializable, NodeMenuItem("Load/Importers From Folders", typeof(AssetProcessGraph))]
     public class LoadImportersNode : AssetProcessGraphNode
     {
-        public override string name=>"Importers From Folders";
+        public override string name => "Importers From Folders";
+#if UNITY_EDITOR
         [SerializeField] DefaultAsset[] Folders;
         [Input("Asset Type"), SerializeField] string assetType;
         [Output("Importers")] AssetImporter[] importers;
-
         public override bool canProcess => Folders != null && Folders.Length > 0 && !string.IsNullOrEmpty(assetType);
 
         protected override void Process()
         {
-#if UNITY_EDITOR
             importers = AssetDatabase.FindAssets($"t:{assetType}", Folders.Select(AssetDatabase.GetAssetPath).ToArray())
-                .Select(AssetDatabase.GUIDToAssetPath).Select(AssetImporter.GetAtPath).ToArray(); 
-#endif
-  
-    
+                .Select(AssetDatabase.GUIDToAssetPath).Select(AssetImporter.GetAtPath).ToArray();
         }
+#endif
     }
 }
