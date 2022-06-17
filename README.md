@@ -19,4 +19,6 @@ Designer-oriented replacement for Unity3d-official Asset Graph (abondoned at 202
 ## Process
 - Save and Refresh
 - Apply Preset ( You can choose to only apply some properties from a Preset and exclude others. Right-click a property and choose Exclude Property. The window displays a red horizontal line next to excluded properties )
-- Replace Shaders
+- Replace Shaders (In prefabs or Materials)
+- Replace Textures (In prefabs or Materials)
+- Set Model Material Mode
