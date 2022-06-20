@@ -13,15 +13,19 @@ namespace mitaywalle.AssetProcessGraph.Nodes
 #if UNITY_EDITOR
         public override string name => "Assets From Folders";
         [SerializeField] DefaultAsset[] Folders;
-        [Input("Asset Type"), SerializeField] string assetType;
         [Output("Assets")] Object[] assets;
 
-        public override bool canProcess => Folders != null && Folders.Length > 0 && !string.IsNullOrEmpty(assetType);
+        public override bool canProcess => Folders != null && Folders.Length > 0;
 
         protected override void Process()
         {
-            assets = AssetDatabase.FindAssets($"t:{assetType}", Folders.Select(AssetDatabase.GetAssetPath).ToArray())
+            assets = AssetDatabase.FindAssets("", Folders.Select(AssetDatabase.GetAssetPath).ToArray())
                 .Select(AssetDatabase.GUIDToAssetPath).Select(AssetDatabase.LoadAssetAtPath<Object>).ToArray();
+
+            if (assets == null)
+            {
+                Debug.LogError("No assets found!");
+            }
         }
 #endif
     }

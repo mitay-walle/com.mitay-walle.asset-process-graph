@@ -8,6 +8,11 @@ namespace mitaywalle.AssetProcessGraph.Nodes
     {
         [Input("Assets")] protected Object[] assets;
         [Output("Assets")] protected Object[] outputAssets;
+
+        public override string ToString()
+        {
+            return $"assets {assets?.Length} | outputAssets {outputAssets?.Length}";
+        }
         protected override void Process()
         {
             foreach (Object asset in assets)
