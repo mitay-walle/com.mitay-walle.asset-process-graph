@@ -19,6 +19,7 @@ Designer-oriented replacement for Unity3d-official Asset Graph (abondoned at 202
 ## Filter
 - filter by Name
 - filter by Asset type
+- filter by Dependency-asset
 ## Process
 - Save and Refresh
 - Combine asset lists
