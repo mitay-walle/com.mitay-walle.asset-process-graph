@@ -1,0 +1,229 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac98089d4290c014ca0c1a8a1f000774, type: 3}
+  m_Name: Graph Weapons Swap Shaders
+  m_EditorClassIdentifier: 
+  serializedNodes: []
+  nodes:
+  - id: 0
+  - id: 1
+  - id: 2
+  - id: 3
+  - id: 4
+  - id: 5
+  - id: 6
+  edges:
+  - GUID: 1ae6938a-b5d6-485c-bd1f-cfe6b06127d9
+    owner: {fileID: 11400000}
+    inputNodeGUID: 4b5ca330-7615-4737-80c3-b95386c86cb6
+    outputNodeGUID: 7f64e2f1-d6fd-450c-b0aa-a00b1e7991c7
+    inputFieldName: assets
+    outputFieldName: outputAssets
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 915a8e77-230e-4893-b28a-a1c60f2074b0
+    owner: {fileID: 11400000}
+    inputNodeGUID: fb113a8d-5d2d-4363-920a-fedb0395ca20
+    outputNodeGUID: c66c9cc6-fb1b-4fc9-bfee-225ddb84d0a4
+    inputFieldName: assets
+    outputFieldName: assets
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: b66c5b36-af79-4fe4-baf8-9ba070dc0545
+    owner: {fileID: 11400000}
+    inputNodeGUID: 69a78ad7-da34-41c6-a04b-5b7a8583dc81
+    outputNodeGUID: fb113a8d-5d2d-4363-920a-fedb0395ca20
+    inputFieldName: assets
+    outputFieldName: outputAssets
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: eb99a003-d3ef-4a88-84c6-c3ae4a29a28d
+    owner: {fileID: 11400000}
+    inputNodeGUID: c63cf579-d8df-43e9-a68e-50881ea7e80c
+    outputNodeGUID: fb113a8d-5d2d-4363-920a-fedb0395ca20
+    inputFieldName: assets
+    outputFieldName: outputAssets
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 9e7fb328-109a-46df-b480-fa1902528452
+    owner: {fileID: 11400000}
+    inputNodeGUID: 262b4385-aa3b-47ad-ad9d-385b7017e1b4
+    outputNodeGUID: c63cf579-d8df-43e9-a68e-50881ea7e80c
+    inputFieldName: assets1
+    outputFieldName: outputAssets
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 7d8f2403-f295-4f21-84f1-208ae2ef7362
+    owner: {fileID: 11400000}
+    inputNodeGUID: 7f64e2f1-d6fd-450c-b0aa-a00b1e7991c7
+    outputNodeGUID: 262b4385-aa3b-47ad-ad9d-385b7017e1b4
+    inputFieldName: assets
+    outputFieldName: outputAssets
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 58ba7481-ab5c-42ff-a4bf-330e3973ff1c
+    owner: {fileID: 11400000}
+    inputNodeGUID: 262b4385-aa3b-47ad-ad9d-385b7017e1b4
+    outputNodeGUID: 69a78ad7-da34-41c6-a04b-5b7a8583dc81
+    inputFieldName: assets
+    outputFieldName: outputAssets
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  groups: []
+  stackNodes: []
+  pinnedElements:
+  - position:
+      serializedVersion: 2
+      x: 0
+      y: 20
+      width: 150
+      height: 200
+    opened: 1
+    editorType:
+      serializedType: GraphProcessor.ProcessorView, com.alelievr.NodeGraphProcessor.Editor,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - position:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 150
+      height: 200
+    opened: 0
+    editorType:
+      serializedType: GraphProcessor.ExposedParameterView, com.alelievr.NodeGraphProcessor.Editor,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  exposedParameters: []
+  serializedParameterList: []
+  stickyNotes: []
+  nodeInspectorReference: {fileID: 0}
+  position: {x: -3.999996, y: 25.000008, z: 0}
+  scale: {x: 0.8695652, y: 0.8695652, z: 1}
+  references:
+    version: 1
+    00000000:
+      type: {class: LoadNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
+      data:
+        nodeCustomName: 
+        GUID: c66c9cc6-fb1b-4fc9-bfee-225ddb84d0a4
+        computeOrder: 0
+        position:
+          serializedVersion: 2
+          x: -18.149994
+          y: 245.00003
+          width: 251
+          height: 136
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        Folders:
+        - {fileID: 102900000, guid: 8c8dde8de8873c34e98f4ebf67bb475d, type: 3}
+    00000001:
+      type: {class: SaveAndRefreshNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
+      data:
+        nodeCustomName: 
+        GUID: 4b5ca330-7615-4737-80c3-b95386c86cb6
+        computeOrder: 6
+        position:
+          serializedVersion: 2
+          x: 1392.97
+          y: 234
+          width: 177
+          height: 99
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+    00000002:
+      type: {class: ProcessReplaceShaderNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
+      data:
+        nodeCustomName: 
+        GUID: 7f64e2f1-d6fd-450c-b0aa-a00b1e7991c7
+        computeOrder: 5
+        position:
+          serializedVersion: 2
+          x: 997.905
+          y: 258
+          width: 336
+          height: 176
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        replaceData:
+        - From: {fileID: 4800000, guid: b5ae9207f77c69b4ead338537d8d0d07, type: 3}
+          To: {fileID: 4800000, guid: 19850d961f2d2134cb50d41a73336ee7, type: 3}
+    00000003:
+      type: {class: AssetNameFilterNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
+      data:
+        nodeCustomName: 
+        GUID: 69a78ad7-da34-41c6-a04b-5b7a8583dc81
+        computeOrder: 3
+        position:
+          serializedVersion: 2
+          x: 537
+          y: 195
+          width: 199
+          height: 126
+        expanded: 0
+        debug: 1
+        nodeLock: 0
+        assetName: store
+    00000004:
+      type: {class: AssetNameFilterNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
+      data:
+        nodeCustomName: 
+        GUID: c63cf579-d8df-43e9-a68e-50881ea7e80c
+        computeOrder: 2
+        position:
+          serializedVersion: 2
+          x: 538
+          y: 333.00003
+          width: 198
+          height: 96
+        expanded: 0
+        debug: 1
+        nodeLock: 0
+        assetName: sight
+    00000005:
+      type: {class: AssetTypeFilterNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
+      data:
+        nodeCustomName: 
+        GUID: fb113a8d-5d2d-4363-920a-fedb0395ca20
+        computeOrder: 1
+        position:
+          serializedVersion: 2
+          x: 270.87476
+          y: 284.99997
+          width: 217
+          height: 96
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        assetType: Material
+    00000006:
+      type: {class: AssetCombineListNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
+      data:
+        nodeCustomName: 
+        GUID: 262b4385-aa3b-47ad-ad9d-385b7017e1b4
+        computeOrder: 4
+        position:
+          serializedVersion: 2
+          x: 773
+          y: 258
+          width: 156
+          height: 99
+        expanded: 0
+        debug: 1
+        nodeLock: 0
+        assets1:
+        - {fileID: 2100000, guid: c614beafd0d8d2442957f23e446f719f, type: 2}
+        - {fileID: 2100000, guid: e7d32e133be289b46abb70eda4daaf10, type: 2}
+        - {fileID: 2100000, guid: 3803bc36a4916e74387e5dd2b4a16991, type: 2}
+        - {fileID: 2100000, guid: a03e3b701a3606848a03cd483909ea38, type: 2}

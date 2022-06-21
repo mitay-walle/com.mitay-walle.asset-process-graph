@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac98089d4290c014ca0c1a8a1f000774, type: 3}
+  m_Name: Graph Cars game materials
+  m_EditorClassIdentifier: 
+  serializedNodes: []
+  nodes:
+  - id: 0
+  - id: 1
+  - id: 2
+  - id: 3
+  edges:
+  - GUID: e37a3ff8-2de5-407b-94b3-113ba61b1eed
+    owner: {fileID: 11400000}
+    inputNodeGUID: 4b5ca330-7615-4737-80c3-b95386c86cb6
+    outputNodeGUID: 3b10b2a2-7174-488f-b221-601a6be08f40
+    inputFieldName: assets
+    outputFieldName: outputAssets
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 2ae9bb0c-4599-4d72-8604-8b2554ad4a93
+    owner: {fileID: 11400000}
+    inputNodeGUID: cf10889d-a6ac-4265-8391-2908c0b42022
+    outputNodeGUID: c66c9cc6-fb1b-4fc9-bfee-225ddb84d0a4
+    inputFieldName: assets
+    outputFieldName: assets
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 92423607-ecf6-40e4-89fe-f9484b120db6
+    owner: {fileID: 11400000}
+    inputNodeGUID: 3b10b2a2-7174-488f-b221-601a6be08f40
+    outputNodeGUID: cf10889d-a6ac-4265-8391-2908c0b42022
+    inputFieldName: assets
+    outputFieldName: outputAssets
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  groups: []
+  stackNodes: []
+  pinnedElements:
+  - position:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 150
+      height: 200
+    opened: 1
+    editorType:
+      serializedType: GraphProcessor.ProcessorView, com.alelievr.NodeGraphProcessor.Editor,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  exposedParameters: []
+  serializedParameterList: []
+  stickyNotes: []
+  nodeInspectorReference: {fileID: 0}
+  position: {x: 154, y: 11.000003, z: 0}
+  scale: {x: 0.8695652, y: 0.8695652, z: 1}
+  references:
+    version: 1
+    00000000:
+      type: {class: LoadNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
+      data:
+        nodeCustomName: 
+        GUID: c66c9cc6-fb1b-4fc9-bfee-225ddb84d0a4
+        computeOrder: 0
+        position:
+          serializedVersion: 2
+          x: 44.050003
+          y: 210.00002
+          width: 315
+          height: 216
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        Folders:
+        - {fileID: 102900000, guid: d49e5d90d3f786443b6ec355f075ecd1, type: 3}
+        - {fileID: 102900000, guid: 486082a16a7fcd04681c08332b464b69, type: 3}
+        - {fileID: 102900000, guid: 76aee739c55c4584da874d9601275f79, type: 3}
+        - {fileID: 102900000, guid: 6507ea74c2f3092419aca2301725b918, type: 3}
+        - {fileID: 102900000, guid: 7bf6d42da42d0324ca1439fa734fa4f5, type: 3}
+    00000001:
+      type: {class: ProcessReplaceMaterialTextureNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
+      data:
+        nodeCustomName: 
+        GUID: 3b10b2a2-7174-488f-b221-601a6be08f40
+        computeOrder: 2
+        position:
+          serializedVersion: 2
+          x: 663
+          y: 210
+          width: 179
+          height: 116
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        replaceData:
+        - From: {fileID: 2800000, guid: 39b6e04c94b4dc64b9c1d9588e03b7a1, type: 3}
+          To: {fileID: 2800000, guid: 1a5c516ef91dc4149b277f16e1d7a8f8, type: 3}
+    00000002:
+      type: {class: SaveAndRefreshNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
+      data:
+        nodeCustomName: 
+        GUID: 4b5ca330-7615-4737-80c3-b95386c86cb6
+        computeOrder: 3
+        position:
+          serializedVersion: 2
+          x: 1017
+          y: 251.75
+          width: 177
+          height: 99
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+    00000003:
+      type: {class: AssetTypeFilterNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
+      data:
+        nodeCustomName: 
+        GUID: cf10889d-a6ac-4265-8391-2908c0b42022
+        computeOrder: 1
+        position:
+          serializedVersion: 2
+          x: 400.60013
+          y: 227.40001
+          width: 217
+          height: 96
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        assetType: Material

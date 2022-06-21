@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac98089d4290c014ca0c1a8a1f000774, type: 3}
+  m_Name: Graph Animations models material none
+  m_EditorClassIdentifier: 
+  serializedNodes: []
+  nodes:
+  - id: 0
+  - id: 1
+  - id: 2
+  edges:
+  - GUID: 377d407e-e56d-4c77-a94f-d9993f08f89c
+    owner: {fileID: 11400000}
+    inputNodeGUID: f60872e2-6cb8-404c-954a-e99b5b96cf04
+    outputNodeGUID: ad06d42e-e7bc-44b9-be8f-196138d2df9c
+    inputFieldName: importers
+    outputFieldName: importers
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: c8d0bca9-e8e4-44a0-ad57-5edcf4de25a6
+    owner: {fileID: 11400000}
+    inputNodeGUID: 18c08761-2a8a-425c-a817-174dbc89f28d
+    outputNodeGUID: f60872e2-6cb8-404c-954a-e99b5b96cf04
+    inputFieldName: importers
+    outputFieldName: outputImporters
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  groups: []
+  stackNodes: []
+  pinnedElements:
+  - position:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 150
+      height: 200
+    opened: 1
+    editorType:
+      serializedType: GraphProcessor.ProcessorView, com.alelievr.NodeGraphProcessor.Editor,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  exposedParameters: []
+  serializedParameterList: []
+  stickyNotes: []
+  nodeInspectorReference: {fileID: 0}
+  position: {x: 81, y: 52, z: 0}
+  scale: {x: 0.8695652, y: 0.8695652, z: 1}
+  references:
+    version: 1
+    00000000:
+      type: {class: LoadImportersNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
+      data:
+        nodeCustomName: 
+        GUID: ad06d42e-e7bc-44b9-be8f-196138d2df9c
+        computeOrder: 0
+        position:
+          serializedVersion: 2
+          x: 246
+          y: 158
+          width: 261
+          height: 136
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        Folders:
+        - {fileID: 102900000, guid: 711696aa52bc7224f98e75bd387835fa, type: 3}
+        assetType: Model
+    00000001:
+      type: {class: ProcessImporterSetImportMaterialNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
+      data:
+        nodeCustomName: 
+        GUID: f60872e2-6cb8-404c-954a-e99b5b96cf04
+        computeOrder: 1
+        position:
+          serializedVersion: 2
+          x: 576
+          y: 198
+          width: 219
+          height: 96
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        Mode: 0
+    00000002:
+      type: {class: SaveAndRefreshNode, ns: mitaywalle.AssetProcessGraph.Nodes, asm: mitay-walle.asset-process-graph}
+      data:
+        nodeCustomName: 
+        GUID: 18c08761-2a8a-425c-a817-174dbc89f28d
+        computeOrder: 2
+        position:
+          serializedVersion: 2
+          x: 860
+          y: 273
+          width: 100
+          height: 100
+        expanded: 0
+        debug: 0
+        nodeLock: 0
